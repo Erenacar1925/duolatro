@@ -1,0 +1,273 @@
+@font-face {
+    font-family: "Shojumaru";
+    src: url("/fonts/Shojumaru-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Righteous";
+    src: url("/fonts/Righteous-Regular.ttf");
+}
+
+.background {
+    -fx-background-image: url("/images/duolatro-startscreen-background-image.png");
+    -fx-background-size: cover;
+}
+
+.title {
+    -fx-font-size: 150px;
+    -fx-text-fill: white;
+    -fx-font-family: "Shojumaru", "Arial Black", sans-serif;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1), 62, 0, 0, 4);
+    /*(Schwarz, 100% Deckkraft), Radius, Dichte des Schattens (0=weich, 1=hart), offsetX, offsetY*/
+    -fx-padding: 150 0 20 0;
+    -fx-max-width: infinity;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+.button {
+    -fx-font-family: "Righteous", "Arial Black", sans-serif;
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+.button:hover {
+    -fx-background-color: #cccccc;
+}
+
+.play-button {
+    -fx-font-size: 24px;
+    -fx-min-width: 200px;
+}
+
+.menu-buttons {
+    -fx-alignment: center;
+    -fx-padding: 40px;
+}
+
+.quit-button {
+    -fx-font-size: 14px;
+    -fx-padding: 4px 8px;
+    -fx-translate-x: -20px;
+    -fx-translate-y: 20px;
+}
+
+.game-screen-background {
+    -fx-background-color: #1C2745;
+}
+
+.sidebar {
+    -fx-background-color: #1C2745;
+    -fx-border-width: 0 2 0 0;
+}
+
+.sidebar-label {
+    -fx-text-fill: white;
+    -fx-font-family: "Righteous", sans-serif;
+    -fx-font-size: 16px;
+}
+
+.sidebar-button {
+    -fx-pref-width: 100px;
+    -fx-border-width: 2;
+    -fx-border-color: white;
+    -fx-background-color: #1C2745;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-family: "Righteous", sans-serif;
+    -fx-padding: 6 16;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: rgba(1, 1, 1, 0.4);
+}
+
+.red-frame {
+    -fx-border-color: #af221c;
+    -fx-border-width: 3;
+}
+
+.blue-frame {
+    -fx-border-color: #4169e1;
+    -fx-border-width: 3;
+    -fx-padding: 5;
+}
+
+.mini-box {
+    -fx-background-color: black;
+    -fx-padding: 10;
+    -fx-spacing: 4;
+    -fx-alignment: center;
+    -fx-pref-width: 100px;
+}
+
+.mini-box > Label {
+    -fx-text-fill: white;
+    -fx-font-family: "Righteous", sans-serif;
+    -fx-font-size: 16px;
+    -fx-alignment: center;
+}
+
+.card-row {
+    -fx-alignment: center;
+    -fx-padding: 10;
+}
+
+
+.info-box {
+    -fx-padding: 10;
+    -fx-background-color: black;
+    -fx-alignment: center;
+}
+
+.info-title, .info-value {
+    -fx-text-fill: white;
+    -fx-font-family: "Righteous", sans-serif;
+    -fx-font-size: 16px;
+    -fx-alignment: center;
+}
+
+.lobby-title {
+    -fx-text-fill: white;
+    -fx-font-size: 30px;
+    -fx-font-family: "Righteous", sans-serif;
+}
+
+.label-player-connection {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-family: "Righteous", sans-serif;
+}
+
+.result-box {
+    -fx-background-color: #1C2745;
+}
+
+.result-title {
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+    -fx-font-family: "Righteous", sans-serif;
+}
+
+.result-label, .result-value {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-family: "Righteous", sans-serif;
+}
+
+.result-screen-button {
+    -fx-pref-width: 250px;
+    -fx-border-width: 2;
+    -fx-border-color: white;
+    -fx-background-color: #1C2745;
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-family: "Righteous", sans-serif;
+    -fx-padding: 6 12;
+}
+
+.result-screen-button:hover {
+    -fx-background-color: rgba(1, 1, 1, 0.4);
+}
+
+.popup-box {
+    -fx-background-color: black;
+    -fx-font-family: "Righteous", sans-serif;
+    -fx-max-width: 620px;
+    -fx-max-height: 350px;
+}
+
+.popup-title {
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+}
+
+.play-hand-button {
+    -fx-background-color: #4169e1;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 20px;
+    -fx-border-width: 2px;
+    -fx-border-color: #4169e1;
+}
+
+.play-hand-button:hover {
+    -fx-background-color: black;
+}
+
+.discard-button {
+    -fx-background-color: #af221c;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 20px;
+    -fx-border-width: 2px;
+    -fx-border-color: #af221c;
+}
+
+.discard-button:hover {
+    -fx-background-color: black;
+}
+
+/* --- READY & CANCEL READY BUTTONS --- */
+.ready-button {
+    -fx-font-family: "Righteous", "Arial Black", sans-serif;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-background-color: #42a63a;
+    -fx-background-radius: 28;
+    -fx-padding: 16 60;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, #1e6823, 10, 0.8, 0, 2);
+    -fx-cursor: hand;
+}
+.ready-button:hover {
+    -fx-background-color: #368e2d;
+}
+.waiting-label {
+    -fx-font-size: 44px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #c0392b;           /* Deep red, feel free to change */
+    -fx-background-color: rgba(255,255,255,0.85);
+    -fx-padding: 24 48 24 48;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: #b03a2e;
+    -fx-border-width: 3px;
+    -fx-effect: dropshadow(gaussian, #222, 16, 0.5, 0, 4);
+    -fx-alignment: center;
+    -fx-label-padding: 12px;
+}
+
+.pending-discard-card {
+    -fx-effect: dropshadow(gaussian, #f54242, 20, 0, 0, 0); /* red glow */
+    -fx-border-color: #f54242;
+    -fx-border-width: 3px;
+    -fx-background-color: #ffd6d6;
+}
+/* Cancel Ready Button (Red) */
+.cancel-ready-button {
+    -fx-font-family: "Righteous", "Arial Black", sans-serif;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-background-color: #e74c3c;
+    -fx-background-radius: 28;
+    -fx-padding: 16 60;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, #94302a, 10, 0.8, 0, 2);
+    -fx-cursor: hand;
+}
+.cancel-ready-button:hover {
+    -fx-background-color: #c0392b;
+}
+
+/* --- COUNTDOWN LABEL --- */
+.countdown-label {
+    -fx-font-family: "Shojumaru", "Righteous", "Arial Black", sans-serif;
+    -fx-font-size: 62px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffd700;
+    -fx-effect: dropshadow(gaussian, #000000, 16, 0.7, 0, 4);
+    -fx-padding: 36 0 0 0;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}

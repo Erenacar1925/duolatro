@@ -1,0 +1,84 @@
+Server – Client:
+-       Ein Server hostet das Spiel, beide Spieler sind Clients, die sich per IP und Port mit dem Server verbinden
+Siehe Sequenzdiagramm für Kommunikation zwischen Client und Server
+-       Chat Funktion zwischen Clients
+
+GUI:
+-       Duolatro Start Fenster:
+Buttons für Play, Options, Quit
+Button um sich mit anderem Spieler zu verbinden
+-       Duolatro Spiel Fenster:
+Linke Seite Anzeige: 
+§  Name des Levels
+§  wie viele Punkte erreicht werden müssen
+§  wie viel Geld verdient wird mit Erreichen der Punkte 
+§  Punktestand aktuell
+§  Welcher Zug wurde gewählt und wie viele Punkte x Faktor gibt dieser
+§  Buttons für Info und Options
+§  Anzeige Hands/Hände
+§  Anzeige Discards/Abwürfe
+§  Anzeige wie viel Geld man aktuell hat
+§  Anzeige für Ante
+§  Anzeige in welcher Runde man sich befindet
+
+Spielfeld pro Spieler:
+§  8 Karten die auf der Hand liegen in horizontaler Reihe
+§  Darüber Karten die Ausgewählt wurden wenn Zug gemacht wird mit Punkteanzahl der jeweiligen Karte
+§  Stapel der anfänglich 52 Karten mit Anzeige wie viele Karten noch auf dem Stapel liegen
+§  Button für Hand spielen / Play Hand
+§  Button für Hand sortieren (nach Rang oder Farbe)
+§  Button für Abwerfen/Discard
+§  Joker / Zusatzkarten Feld
+
+Zusätzliche Fenster:
+§  Level Auswahl
+§  Shop
+§  Info Fenster
+§  Etc.
+
+Karten:
+-       Kartentypen
+·      2 – 10
+·      Bube (J), Dame (Q), König (K), Ass (A)
+·      Herz, Pik, Karo, Kreuz
+·      Joker
+·      Spezielle Karten
+-       Kartenpunkte:
+Jede Karte gibt sogenannte zusätzliche Chips (Punkte)
+·      2 – 10 gibt so viele Punkte wie Zahlenwert
+·      Bube – König 10 Punkte
+·      Ass 11 Punkte
+-       Karten auf der Hand:
+·      Müssen immer 8 pro Spieler sein, wenn welche Abgeworfen werden müssen neue Karten kommen
+·      Klickt man eine Karte an „erhebt“ sich diese und der Punktewert der Karte wird angezeigt
+·      Erst bei erneutem Klicken auf Karte reiht sie sich wieder zu anderen Karten ein
+·      Karten können Gespielt oder Abgeworfen werden
+-       Karte wird Gespielt:
+·      Karte reiht sich aus dem Stapel und erscheint in Mitte des Spielfeldes zusammen mit anderen Karten die Gespielt werden
+·      Nacheinander werden die Punkte/Chips angezeigt die Pro Gespielter Karte zusätzlich verdient werden und welche sich auf die Basispunktzahl addieren
+·      Danach erlöschen die gespielten Karten und eine neue Runde beginnt (aus Kartenstapel werden neue Karten gezogen, sodass jeder Spieler wieder 8 Karten auf der Hand hat)
+-       Karte wird Abgeworfen:
+·      Wirft ein Spieler A eine Karte ab landet diese in den offenen Karten des Spieler B
+
+Punktestand:
+-       Errechnet sich aus (Basispunktzahl + Punkte pro Karte) x Multiplikator
+-       Pro Runde summiert sich der Punktestand bis zu dem zu erreichenden Punktestand des Levels 
+ 
+
+Geld Bank:
+-       Nach jedem Erreichen eines Levels wird Geld eingezahlt
+-       Bei Kauf im Shop verringert sich Betrag
+
+
+Hands/Hände:
+-       Zeigt an wie viele Hände noch gespielt werden dürfen
+-       Jeder Spieler hat anfänglich 4 Hände
+-       Pro gespielte Hand verringert sich die Zahl
+-       Sobald 0 Hände verfügbar sind und Punktzahl des Levels noch nicht erreicht wurde ist das Spiel zu Ende: GAME OVER
+ 
+Abwürfe/Discards:
+-       Zeigt an wie viele Abwürfe noch erfolgen dürfen
+-       Pro Abwurf verringert sich Zahl von Anfänglich 4 Pro Spieler
+-       Sobald 0 Abwürfe verfügbar darf kein Abwurf mehr erfolgen
+
+
